@@ -7,11 +7,11 @@ import { Apiprovider } from './context/api.context.jsx'
 
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <BrowserRouter>
-      <Apiprovider>
-        <App />
-      </Apiprovider>
-    </BrowserRouter>
-  </StrictMode>,
+    <StrictMode>
+        <BrowserRouter>
+            <Apiprovider>
+                <App />
+            </Apiprovider>
+        </BrowserRouter>
+    </StrictMode>,
 )

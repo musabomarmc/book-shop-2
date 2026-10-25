@@ -9,7 +9,7 @@ import { useApi } from '../context/api.context';
 
 const Sign_up = () => {
     const navigate = useNavigate();
-    const { Registration } = (useApi)
+    const { Registration } = useApi()
 
 
     const [formData, setFormData] = useState({

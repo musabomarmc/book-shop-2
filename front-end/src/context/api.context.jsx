@@ -13,7 +13,7 @@ export const Apiprovider = ({children}) => {
         setLoading(true);
         try {
             const res = await fetch("/api/auth/sign_up", {
-                method: "post",
+                method: "POST",
                 headers: { "content-type": "application/json" },
                 body: JSON.stringify(userInfo)
             })
@@ -34,12 +34,12 @@ export const Apiprovider = ({children}) => {
         }
     }
 
-    //to sign in use /api/auth/sign_in method post
+    //to sign in use /api/auth/sign-in method post
     const login = async ( credentails) => {
         setLoading(true);
         try {
-            const res = await fetch("/api/auth/sign_up", {
-                method: "post",
+            const res = await fetch("/api/auth/sign-in", {
+                method: "POST",
                 headers: { "content-type": "application/json" },
                 body: JSON.stringify(credentails)
             })
