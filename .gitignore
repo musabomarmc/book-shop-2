@@ -1,24 +1,70 @@
+
+# Dependencies
+node_modules/
+vendor/
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
-lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Build output
+dist/
+build/
+out/
+target/
 
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
+# Cache and temporary files
+.cache/
+.tmp/
+temp/
+tmp/
+coverage/
+.nyc_output/
+
+# Database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.eggs/
+htmlcov/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating system files
 .DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+Thumbs.db
+
+# Testing
+test-results/
+
+# Docker overrides
+docker-compose.override.yml
+
+# Local configuration
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
