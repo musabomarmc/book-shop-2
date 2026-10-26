@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import bookRouter from "./routers/auth.router.js";
 import { connectDb } from "./config/db.js";
+import bookRouter from "./routers/book.router.js";
 
 dotenv.config();
 
@@ -9,6 +10,7 @@ const app =express();
 app.use(express.json());
 
 app.use("/api/auth", bookRouter);
+app.use("/api/books", bookRouter);
 
 
 const PORT = process.env.PORT || 4000;
