@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-import bookRouter from "./routers/auth.router.js";
+import authRouter from "./routers/auth.router.js";
 import { connectDb } from "./config/db.js";
 import bookRouter from "./routers/book.router.js";
 
@@ -9,7 +9,7 @@ dotenv.config();
 const app =express();
 app.use(express.json());
 
-app.use("/api/auth", bookRouter);
+app.use("/api/auth", authRouter);
 app.use("/api/books", bookRouter);
 
 
